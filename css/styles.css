@@ -1,0 +1,132 @@
+body,
+html {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: blue;
+}
+
+.navigation a {
+  color: YELLOW;
+  text-decoration: none;
+}
+
+/*general selection: any anchor tag that inside .navigation will be yellow*/
+
+/*direct descendant of .navigation*/
+.navigation > a {
+  color: blue;
+  border: 2px dotted yellow;
+  padding: 10px;
+}
+
+.navigation {
+  display: inline-block;
+
+  background-color: transparent;
+}
+
+.my-header .logo {
+  background-color: #202020;
+  height: 48px;
+  margin-top: 50px;
+}
+
+.my-header span {
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 20px;
+}
+
+/*ID has the highest specificity level, it always wins*/
+#my-header {
+  background-color: red;
+}
+
+.my-header {
+  display: block;
+  background-color: #202020;
+  height: 60px;
+}
+
+/* HUSK Å IMPLEMENTERE DETTE ETTER FLERE LINKER 
+HASHTAG ER ID-SELECTOR 
+PUNKTUM ER CLASS SELECTOR 
+HASHTAG ER DEN SOM PRIORITERES 
+HA KUN ÈN #/IDSELECTOR PÅ EN SIDE*/
+
+/*
+LAG FØLGENDE SIDER; HOME GUITARS ABOUT CONTACT
+GJØR TILSVARENDE FOR CONTACT PAGE OG DE ANDRE, husk å endre titler osv
+
+HUSK Å IMPLEMENTERE DETTE ETTER FLERE LINKER
+*/
+
+#home-page h1 {
+  color: black;
+}
+
+body#guitar-page {
+  background-color: transparent;
+}
+
+#guitar-page h1 {
+  color: black;
+}
+
+body#contact {
+  background-color: transparent;
+}
+
+#contact h1 {
+  color: black;
+}
+
+.navigation ul {
+  list-style: none;
+  color: #fff;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.navigation {
+  background-color: #202020;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-banner {
+  background-color: teal;
+  background-image: url("/img/guitar-4");
+  background-repeat: no-repeat;
+  height: 420px;
+  background-size: cover;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+  /*border:*/
+}
+
+/*  margin: 0 0 0 0 
+margin: top right bottom left 
+*/
+
+.footer {
+  background-color: lightcoral;
+}
